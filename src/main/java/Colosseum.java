@@ -72,7 +72,23 @@ public class Colosseum {
      *         Implement this function.
      */
     public static Pokemon buildPokemon() {
-        Pokemon tempPokemon = new Pokemon();
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        System.out.println("How many hit points will it have? (1-50):");
+        a = myScan.nextInt();
+        while (a > MAX_HIT_POINTS || a < 1) {
+            System.out.println("Sorry. Hit points must be between 1 and 50:");
+            a = myScan.nextInt();
+        }
+        System.out.println("Split fifty points between attack level and defense level Enter your attack level (1-49):");
+        b = myScan.nextInt();
+        while (b > MAX_HIT_POINTS - 1 || b < 1) {
+            System.out.println("Sorry. attckpnt points must be between 1 and 49:");
+            b = myScan.nextInt();
+        }
+        c = (MAX_HIT_POINTS - 1) - b;
+        Pokemon tempPokemon = new Pokemon(a, b, c);
         return tempPokemon;
     }
 

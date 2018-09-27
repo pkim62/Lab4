@@ -65,6 +65,11 @@ public class Pokemon {
         hitPoints = hp;
         defenseLevel = dL;
         attackLevel = attcklvl;
+        final int d6num = 6;
+        final int d20num = 20;
+        this.d6 = new Dice(d6num);
+        this.d20 = new Dice(d20num);
+        this.name = "";
     }
 
     /**
