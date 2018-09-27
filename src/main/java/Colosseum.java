@@ -90,9 +90,11 @@ public class Colosseum {
      * Implement this function.
      */
     public static void printWhoIsAhead() {
-        System.out.println("Implement me!");
-    }
-
+        if (firstPokemon.hitPoints > secondPokemon.hitPoints) {
+            System.out.println(firstPokemon);
+        }
+            System.out.println(secondPokemon);
+        }
     /**
      * Prints out the overall winner of the battle.
      * <p>
@@ -101,7 +103,10 @@ public class Colosseum {
      * Write this function.
      */
     public static void determineWinner() {
-        System.out.println("Implement me!");
+        if (firstPokemon.hitPoints != 0) {
+            System.out.println(firstPokemon.name);
+        }
+        System.out.println(secondPokemon.name);
     }
 
     /**
