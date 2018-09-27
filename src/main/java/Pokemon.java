@@ -56,6 +56,18 @@ public class Pokemon {
     Dice d20;
 
     /**
+     *constructor for non default stuff
+     * @param hp hitPoints for mon
+     * @param attcklvl attckllevel for mon
+     * @param dL defenseLevel for mon
+     */
+    public Pokemon(final int hp, final int attcklvl, final int dL) {
+        hitPoints = hp;
+        defenseLevel = dL;
+        attackLevel = attcklvl;
+    }
+
+    /**
      * Create a new Pokemon with default values.
      * <p>
      * Constructs a new Pokemon with a 6-sided die, 20-sided die, 0 hit points, attack level of 0,
